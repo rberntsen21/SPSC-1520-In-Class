@@ -18,3 +18,17 @@ function strong(value) {
     return '<strong>' + value + '</strong>';
   }
 
+
+  function italics(text) {
+    return '<i>' + text + '</i>';
+  }
+
+  var tag = document.querySelector('p .note');
+  tag.innerHTML = italics(tag.innerHTML);
+
+  
+
+  //function updateInnerHTML(selector, newValue) {
+  //var tag = document.querySelector('p .note');
+  //tag.innerHTML = italics(tag.innerHTML);
+  //}
