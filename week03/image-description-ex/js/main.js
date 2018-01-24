@@ -5,6 +5,11 @@ function featureLinkHandler(evt){
     featureImage.src = featureLink.href;
     featureImage.classList.remove('hidden');
 
+    featureImage.alt = featureLink.title;
+
+    var captionParagraph = document.querySelector('p.feature.title');
+    captionParagraph.innerHTML = featureLink.title;
+
     evt.preventDefault();
 }
 
