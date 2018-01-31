@@ -6,8 +6,8 @@ function featureLinkHandler(evt) {
         featureImage.src = featureLink.href;
         featureImage.classList.remove('hidden');
     } else{
-        featureImage.src = featureLink.href;
-        featureImage.classList.add('hiden');
+        featureImage.className !='hidden';
+        featureImage.classList.add('hidden');
     }
 
     evt.preventDefault();
