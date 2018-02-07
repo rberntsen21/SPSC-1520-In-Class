@@ -11,7 +11,9 @@ function onPlaceholderTextChanged(evt) {
     var src = imgElement.src;
     var indexOfEqualSign = src.indexOf('=');
     var newSrc = src.substring(0, indexOfEqualSign);
+
     console.log(newSrc);
+    
     newSrc = newSrc + '=' + evt.target.value;
     imgElement.src = newSrc;
 }
