@@ -10,13 +10,22 @@ document.querySelector('.feature.frm ').addEventListener( 'submit', function (ev
     var tag = frm.elements.tags;
     var error = document.querySelector('p.feature.error');
 
-    if (tag.value.trim() != '') {
-
-    document.querySelector('p.feature.tags ').innerHTML +=  ' #' + tag.value;
+    if (tags.value.trim() != '') {
+        if (tag.value.indexOf(' ') >=0 )
+        {
+           error.innerHTML = 'Tags cannot contain spaces';
+           error.classList.remove('hidden');
+        }
+        else{
+    document.querySelector('p.feature.tags').innerHTML +=  '#' + tag.value.trim() + ' ';
     tag.value = '';
     error.classList.add('hidden');
+
+        }
     } else {
-    error.classList.remove('hidden');
+        error.innerHTML = 'Blank input will not be processed';
+        error.classList.remove('hidden');
     }
+
     evt.preventDefault();
    });
