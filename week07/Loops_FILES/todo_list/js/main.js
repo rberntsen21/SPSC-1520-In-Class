@@ -15,6 +15,7 @@ document.querySelector('[name=toggle]').addEventListener('change', function(evt)
 
 });
 
+<<<<<<< HEAD
 var count;
 var subject = document.querySelector('tr');
 var td
@@ -28,3 +29,6 @@ document.querySelector('form').addEventListener('submit', function(evt){
 
 
 });
+=======
+document.querySelector('')
+>>>>>>> 08545d1af04d36a986f985e460d86e2c16b6a6ea
