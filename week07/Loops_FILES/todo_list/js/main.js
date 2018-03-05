@@ -14,3 +14,17 @@ document.querySelector('[name=toggle]').addEventListener('change', function(evt)
     }
 
 });
+
+var count;
+var subject = document.querySelector('tr');
+var td
+
+document.querySelector('form').addEventListener('submit', function(evt){
+    for(count=0; count < subject.length; count++){
+    td = subject[count].
+
+
+    }
+
+
+});

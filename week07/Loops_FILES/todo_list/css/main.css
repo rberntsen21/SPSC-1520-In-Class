@@ -4,6 +4,21 @@ body {
 	margin: 0;
 	padding: 0;
 }
+
+form{
+    float: right;
+}
+
+form input{
+    height: 30px;
+    border-radius: 6px;
+}
+
+form button{
+    height: 30px;
+    border-radius: 6px;
+}
+
 .messages {
 	margin: auto;
 	padding: 1em;
@@ -54,4 +69,8 @@ body {
 }
 .messages>table>tbody>tr:nth-of-type(odd) {
     background-color: #f9f9f9;
+}
+
+.stripe{
+    background-color: yellow;
 }
