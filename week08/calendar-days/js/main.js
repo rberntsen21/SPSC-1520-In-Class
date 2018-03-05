@@ -12,12 +12,36 @@ var days = [
 // indexer counter for traversing the array
 var idx;
 
+
+
 // variable for the table, which includes a row for day names
-var cal = '<table><tr>';
+var cal = '<table style= "border:thin solid black;"><tr>';
 
 	// add add day names
 for (idx = 0; idx < days.length; idx += 1) {
 	cal += '<th>' + days[idx] + '</th>';
+}
+// Adding rows for march, 2018 
+// TODO: for the current date, make the day corresponding table cell have a style of border: solid 1px forestgreen;
+var dayOfMonth = -3; //March 1 starts on Thursday
+var lastDay = 31; 
+for(var week = 1; week <=6; week++){
+	cal += '<tr>';
+	// Add cells for the week
+	for(var day = 0; day < 7; day++){
+		cal+= '<td>';
+		// Display day number
+		var currentdate = new Date();
+		if(currentdate.getDate())
+
+		if (dayOfMonth > 0 && dayOfMonth <= lastDay){
+
+			cal+= dayOfMonth;
+		}
+		cal += '</td>';
+		dayOfMonth++;
+	}
+	cal += '</tr>';
 }
 
 // close the table and display
